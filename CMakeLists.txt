@@ -25,6 +25,8 @@ add_executable(VapeEngine src/main.cpp
         src/Core/SceneManager.h
         src/Core/Renderer.cpp
         src/Core/Renderer.h
+        src/Core/Utils.cpp
+        src/Core/Utils.h
 )
 
 find_package(raylib CONFIG REQUIRED)

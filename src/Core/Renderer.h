@@ -8,6 +8,12 @@
 
 
 class Renderer {
+private:
+
+public:
+    Renderer() = default;
+    ~Renderer() = default;
+
 
 };
 

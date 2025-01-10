@@ -3,3 +3,11 @@
 //
 
 #include "AssetManager.h"
+
+bool AssetManager::checkExistingTexture(const std::string& fileName) {
+    if (textures.contains(fileName)) {
+        std::cerr << "AssetManager"
+        return true;
+    }
+    return false;
+}
