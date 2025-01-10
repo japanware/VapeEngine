@@ -5,15 +5,20 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-
+#include "Renderer.h"
 
 class Scene {
 public:
-    Scene() = default;
-    virtual ~Scene() = 0;
+    Scene()                     = default;
+    virtual ~Scene()            = default;
 
-    virtual void update() = 0;
-    virtual void render() = 0;
+    // I don't fucking know what to do with these functions.
+    // I could use them in the future, maybe.
+    virtual void initScene() {};
+    virtual void cleanupScene() {};
+
+    virtual void update(float deltaTime)        = 0;
+    virtual void render(Renderer& renderer)     = 0;
 
 };
 

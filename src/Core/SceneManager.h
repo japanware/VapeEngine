@@ -18,6 +18,8 @@ public:
     SceneManager() = default;
     ~SceneManager() = default;
 
+    bool checkExistingScenes(const std::string& name) const;
+
     void addScene(const std::string& name, std::shared_ptr<Scene>& scene);
     void switchScene(const std::string& name);
 

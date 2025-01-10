@@ -4,8 +4,6 @@
 
 #include "Game.h"
 
-#define EXPIRED "18+"
-
 void Game::update(float deltaTime) {
 }
 
