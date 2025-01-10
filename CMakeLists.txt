@@ -18,7 +18,11 @@ add_executable(VapeEngine src/main.cpp
         src/Game/Game.cpp
         src/Game/Game.h
         src/Core/AssetManager.cpp
-        src/Core/AssetManager.h)
+        src/Core/AssetManager.h
+        src/Core/Scene.cpp
+        src/Core/Scene.h
+        src/Core/SceneManager.cpp
+        src/Core/SceneManager.h)
 
 find_package(raylib CONFIG REQUIRED)
 target_link_libraries(VapeEngine PRIVATE raylib)

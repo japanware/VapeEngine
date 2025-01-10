@@ -6,18 +6,19 @@
 #define ENGINE_H
 
 #include <iostream>
-#include <raylib.h>
+#include "Game/Game.h"
+#include "raylib.h"
 
 
 class Engine {
 private:
 
 public:
-    Engine();
-    ~Engine();
 
-    virtual void update();
-    virtual void render();
+    static void init();
+    static void cleanup();
+    static void run();
+
 };
 
 
