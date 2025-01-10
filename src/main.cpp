@@ -1,5 +1,6 @@
 #include "Engine.h"
 
 int main() {
-    Engine::run();
+    Engine engine;
+    engine.run();
 }

@@ -9,15 +9,14 @@
 
 class Game {
 private:
-    const char* m_windowTitle;
-    float m_deltaTime;
+    // const char* m_windowTitle;
 
 public:
-    Game();
+    Game() = default;
     ~Game() = default;
 
-    static void update();
-    static void render();
+    void update(float deltaTime);
+    void render();
 };
 
 

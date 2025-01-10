@@ -5,24 +5,28 @@
 #include "Engine.h"
 
 void Engine::init() {
-    InitWindow(1080, 720, m_windowTitle);
+    InitWindow(1080, 720, "test");
     SetTargetFPS(60);
 }
 
 void Engine::cleanup() {
-
+    CloseWindow();
 }
 
 void Engine::run() {
-    std::cout << "Hello from the engine!\n";
     init();
 
     while (WindowShouldClose() == false) {
-        Game::update();
+        deltaTime = GetFrameTime();
+        game.update(deltaTime);
 
         BeginDrawing();
         ClearBackground(BLACK);
-        Game::render();
+
+        game.render();
+
         EndDrawing();
     }
+
+    cleanup();
 }

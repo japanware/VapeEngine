@@ -12,12 +12,16 @@
 
 class Engine {
 private:
+    Game game;
+    float deltaTime;
 
 public:
+    Engine() = default;
+    ~Engine() = default;
 
-    static void init();
-    static void cleanup();
-    static void run();
+    void init();
+    void cleanup();
+    void run();
 
 };
 
